@@ -1,5 +1,5 @@
 javascript:(function(){
-    var popup = window.open("", "_blank", "width=300,height=200");
+    var popup = window.open("", "_blank", "width=300,height=300vh");
     popup.document.write(`
     <html>
     <head>
@@ -30,6 +30,17 @@ javascript:(function(){
             document.getElementById('result').textContent = 'You entered: ' + userInput;
         });
     </script>
+    <hr>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+        <li>f</li>
+        <li>g</li>
+        <li>h</li>
+    </ol>
     </body>
     </html>`);
     /*popup.document.close();
