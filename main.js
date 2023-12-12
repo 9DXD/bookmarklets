@@ -3,5 +3,5 @@ javascript:(() => {
   fetch(url)
     .then(response => response.text())
     .then(text => eval(text))
-    .catch(error => console.error(error));
+    /*.catch(error => console.error(error));*/
 })();
