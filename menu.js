@@ -1,6 +1,6 @@
 javascript:(function(){
     var popup = window.open("", "_blank", "width=300,height=200");
-    popup.document.write("
+    popup.document.write(`
     <html>
     <head>
     <title>about:blank</title>
@@ -8,7 +8,7 @@ javascript:(function(){
         body {
             font-family: Arial, sans-serif;
         }
-        .fb0bf4c3-3429-473a-a303-e4dda50e1daa {
+        .custom-input {
             width: 100%;
             padding: 5px;
             border: 1px solid #ccc;
@@ -17,9 +17,9 @@ javascript:(function(){
     </style>
     </head>
     <body>
-    <h2>Bookmarklet Menu</h1>
+    <h2>Bookmarklet Menu</h2>
     <form id='form'>
-        <input type='text' class='fb0bf4c3-3429-473a-a303-e4dda50e1daa' id='userInput' placeholder='Enter the number of the bookmarklet...'>
+        <input type='text' class='custom-input' id='userInput' placeholder='Enter the number of the bookmarklet...'>
         <button type='submit'>Submit</button>
     </form>
     <p id='result'></p>
@@ -31,7 +31,7 @@ javascript:(function(){
         });
     </script>
     </body>
-    </html>");
+    </html>`);
     /*popup.document.close();
     window.onblur = function() {
         popup.close();
